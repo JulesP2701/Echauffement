@@ -47,30 +47,32 @@ class Program
 		// Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 		Console.WriteLine("\n Choose your weapon!");
 		string Response = Console.ReadLine();
-		if (Response == "1" && argent >= 30)
+
+	
+		if (Response == "1" && argent >= 30 && age > 18)
 		{
 			Response = "You choose : BigSword : 30";
 			Console.WriteLine($"Il te reste : {argent - Bigswordprice} ");
 
 		}
-		else if (Response == "2" && argent >= 20)
+		else if (Response == "2" && argent >= 20 && age > 18)
 		{
 			Response = "You choose : Axe : 20";
 			Console.WriteLine($"Il te reste : {argent - Axeprice} ");
 		}
-		else if (Response == "3" && argent >= 25)
+		else if (Response == "3" && argent >= 25 && age > 18)
 		{
 			Response = "You choose : Bow : 25";
 			Console.WriteLine($"Il te reste : {argent - Bowprice} ");
 		}
-		else if (Response == "4" && argent >= 30)
+		else if (Response == "4" && argent >= 30 && age > 18)
 		{
 			Response = "You choose : Spear : 27";
 			Console.WriteLine($"Il te reste : {argent - Spearprice} ");
 
 		}
 		else
-			Console.WriteLine("You don't have enough money");
+			Console.WriteLine("You don't have enough money or you are a minor ");
 
 		Console.WriteLine($"{Response}");
 
