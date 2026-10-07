@@ -41,7 +41,7 @@ class Program
 		int Bowprice = 25;
 		string Spear = "BigSword";
 		int Spearprice = 27;
-        Console.Write($"1. {Bigsword} + {Bigswordprice} \n 2. {Axe} + {Axeprice} \n 3. {Bow} + {Bowprice} \n 4. {Spear} + {Spearprice}");
+        Console.Write($"1. {Bigsword} : {Bigswordprice}$ \n 2. {Axe} : {Axeprice}$ \n 3. {Bow} : {Bowprice} \n 4. {Spear} : {Spearprice}$");
         
 
 		// Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
@@ -51,18 +51,18 @@ class Program
 	
 		if (Response == "1" && argent >= 30 && age > 18)
 		{
-			Response = "You choose : BigSword : 30";
+			Response = "You choose : BigSword  price : 30";
 			Console.WriteLine($"Il te reste : {argent - Bigswordprice} ");
 
 		}
 		else if (Response == "2" && argent >= 20 && age > 18)
 		{
-			Response = "You choose : Axe : 20";
+			Response = "You choose : Axe  price : 20";
 			Console.WriteLine($"Il te reste : {argent - Axeprice} ");
 		}
 		else if (Response == "3" && argent >= 25 && age > 18)
 		{
-			Response = "You choose : Bow : 25";
+			Response = "You choose : Bow price :  25";
 			Console.WriteLine($"Il te reste : {argent - Bowprice} ");
 		}
 		else if (Response == "4" && argent >= 30 && age > 18)
