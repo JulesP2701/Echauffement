@@ -2,8 +2,9 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Exercice1(string[] args)
     {
+		//
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
@@ -87,5 +88,6 @@ class Program
 		/*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
+		 //
 	}
 }
